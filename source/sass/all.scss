@@ -1,0 +1,149 @@
+  @import 'pwc.scss';
+
+  #pwc-container {
+    font-size: 16px !important;
+    font-family: $pwc-font-stack__body;
+    margin: 0 !important;
+  }
+
+  .pwc-header__pic {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    font-family: Georgia, Arial, Helvetica, sans-serif;
+    background-image: url(https://pwc.csod.com/clientimg/pwc/welcome/TW/The%20PwC%20Professional/PwC_PC_NOR_OSLO_66-min-2.jpg);
+    -ms-background-position-x: 10%;
+    -ms-background-position-y: 51%;
+    background-position: 10% 51%;
+    background-size: cover;
+    /* opacity: 0.8; */
+    height: 100px;
+    max-width: 1340px;
+    margin: 0;
+    h1 {
+      padding: .75rem 1.25rem;
+      margin: 0 !important;
+      color: $pwc-color__white;
+      background-color: $pwc-color__orange;
+    }
+  }
+
+  .pwc-nav {
+    font-family: Georgia, Arial, Helvetica, sans-serif;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin: 1rem 0 2rem 0;
+    .nav .nav-item a {
+      color: $pwc-color__black !important;
+      &:hover {
+        color: $pwc-color__orange !important;
+      }
+      &.active {
+        color: $pwc-color__orange !important;
+        font-weight: 600;
+        border-bottom: 4px solid $pwc-color__orange;
+      }
+    }
+  }
+  
+  .list-group-item.active {
+    background-color: $pwc-color__orange;
+    border-color: $pwc-color__orange;
+    transition: background-color 0.5s ease, border-color 0.5s ease;
+    color: $pwc-color__white;
+  }
+
+  .list-item {
+    color: $pwc-color__orange !important;
+    font-weight: 600;
+  }
+
+  h5.list-item {
+    padding-top: 10px;
+  }
+
+  .scrollspy-example {
+    height: 600px;
+    overflow: auto;
+    padding-right: 20px;
+    .card {
+      margin-bottom: 1rem;
+    }
+  }
+   
+  .scrollspy-example .card-img-top {
+    margin: 1.25rem;
+    border-radius: 0 !important;
+    width: auto !important;
+  }
+
+  .modal {
+    font-family: $pwc-font-stack__body;
+  }
+
+  .modal-content {
+    font-size: 16px;
+  }
+  
+  [data-toggle="modal"]:hover {
+    cursor: pointer;
+  }
+
+  .pwc-link {
+    font-weight: 400;
+    background: 
+     linear-gradient(
+       to bottom, #D93954 0%,
+       #D93954 100%
+     );
+    background-position: 0 100%;
+    background-repeat: repeat-x;
+    background-size: 1px 1px;
+    color: #D93954;
+    text-decoration: none;
+    transition: background-size .2s;
+  }
+
+  .pwc-link:hover {
+    color: #FFFFFF;
+    background-size: 1px 50px;
+  }
+  
+  @media only screen and (max-width: 992px) {
+    .scrollspy-example .card {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .card-body--np {
+      padding-top: 0 !important;
+    }
+    .section-102070 .card {
+      flex-basis: 100% !important;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1340px !important;
+    }
+  }
+
+  // Override Browser Default
+  area {
+    outline: 0 !important;
+    border: none;
+  }
+
+  // Override Bootstrap CSS
+  a {
+    &:active, &:focus {
+      outline: 0 !important;
+      border: none;
+    }
+  }
+
+  // Vantage Platform
+  #main-menu a {
+    color: #602320;
+  }

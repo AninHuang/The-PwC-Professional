@@ -1,0 +1,260 @@
+doctype html
+html(lang='en')
+  head
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // Bootstrap CSS
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+    // FontAwesome CSS
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.8.2/css/all.css", integrity='sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay', crossorigin='anonymous')
+    // PwC CSS
+    link(rel="stylesheet", href="./css/pwc.css")
+    // All CSS
+    link(rel="stylesheet", href="./css/all.css")
+    title The PwC Professional
+    style.
+      .list-group-flush .list-group-item:nth-child(odd) {
+      background-color: #F8F9FA;
+      }
+      .pwc-program {
+      position: relative;
+      }
+      .pwc-program__text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+      max-width: 300px;
+      margin: auto;
+      padding: 1rem;
+      border-radius: 5%;
+      background-color: #DEDEDE;
+      opacity: .9;
+      }
+      @media (min-width: 1200px) {
+      .container {
+      max-width: 1340px!important;
+      }
+      .pwc-picaside {
+      width: -webkit-calc(100% - 420px - 3rem); /* Safari, Chrome */
+      width: -moz-calc(100% - 420px - 3rem); /* Mozilla */
+      width: calc(100% - 420px - 3rem);
+      }
+      }
+  body
+    #pwc-container.container
+      // Start: Header
+      .row.pwc-header__pic
+        h1 The PwC Professional
+      // End: Header
+      // Start: Navigation
+      .row.justify-content-md-left.pwc-nav
+        ul.nav.justify-content-center
+          li.nav-item
+            a.nav-link(href='https://pwc.csod.com/catalog/CustomPage.aspx?id=20003310') Home
+          li.nav-item
+            a.nav-link(href='https://pwc.csod.com/catalog/CustomPage.aspx?id=20003318') Associate
+          li.nav-item
+            a.nav-link(href='https://pwc.csod.com/catalog/CustomPage.aspx?id=20003358') Senior Associate
+          li.nav-item
+            a.nav-link(href='https://pwc.csod.com/catalog/CustomPage.aspx?id=20003359') Manager
+          li.nav-item
+            a.nav-link.active(href='https://pwc.csod.com/catalog/CustomPage.aspx?id=20003360') Senior Manager
+          li.nav-item
+            a.nav-link(href='https://pwc.csod.com/catalog/CustomPage.aspx?id=20003361') Director
+          li.nav-item
+            a.nav-link(href='https://pwc.csod.com/catalog/CustomPage.aspx?id=20003362') Partner
+      // End: Navigation
+      // Start: Content
+      .row
+        // Start: Left Tabs
+        .col-3.pb-5
+          #list-example.list-group
+            a.list-group-item.list-group-item-action(href='#list-item-1') 角色簡介
+            a.list-group-item.list-group-item-action(href='#list-item-2')
+              | 做中學－the
+              | 70
+            a.list-group-item.list-group-item-action(href='#list-item-3')
+              | 互相學－the
+              | 20
+            a.list-group-item.list-group-item-action(href='#list-item-4')
+              | 上課學－the
+              | 10
+        // End: Left Tabs
+        // Start: Right Context
+        .col-9.pb-5
+          .scrollspy-example.z-depth-1(data-spy='scroll', data-target='#list-example', data-offset='0')
+            // Start: 角色簡介／Role Overview(Senior Manager)
+            h5#list-item-1.list-item 角色簡介
+            hr
+            .row.justify-content-center
+              img.mt-2.mb-4.mx-xl-4.order-xl-1(src='https://pwc.csod.com/clientimg/pwc/welcome/TW/The%20PwC%20Professional/Photo_P_RGB_SH_D1_JA_5991.jpg', alt='', width='420', height='280')
+              .col.pwc-picaside.order-xl-0 
+                p
+                  | 根據 
+                  a.pwc-color__rose--whitetype.pwc-link(href='https://pwc.csod.com/catalog/CustomPage.aspx?id=20003310#list-item-2', target='_blank') The PwC Professional 職能發展架構
+                  | ，身為 Senior Manager 或是 Associate Director，我們要管理的專案量變得更多、專案內容也更複雜，和關係人接觸的層級也變得更高。
+                  | 除此之外，我們還必須展現合宜的領導與教練行為，傳達 The PwC Professional 的理念，讓我們所帶領的同仁能夠有學習的典範。
+                p
+                  | 為了因應此階段工作的要求，我們需要持續累積各種經驗，並主動運用相關的訓練發展資源，精進策略思考、業務開發、客戶關係管理、團隊領導等能力，將學習與工作結合，以達成目標。
+            // End: 角色簡介／Role Overview (Senior Manager)
+            // Start: 做中學－the 70 (Senior Manager)
+            h5#list-item-2.list-item 做中學－the 70
+            hr
+            p.pwc-color__red 「我聽過，但是會遺忘；我看到，就會記得；只有親自實踐，才能真正瞭解。」 ~ 古諺
+            p 透過實務挑戰學習，指的是從工作經驗、具挑戰的任務以及解決問題的過程中學習。
+            p
+              | 我們將這個部分整合出五個學習項目，包含：「強化既有的知識與技能 (Using what we already know)」、「學習新技能 (Picking up new skills)」、「與他人合作
+              | (Working with others)」、「領導 (Leadership)」及「經驗循環 (Cycles of
+              | experience)」。在這五個項目之下，各有不同的範例可供參考。我們可以思考如何運用於工作中，以豐富我們的學習經驗。
+            p.font-weight-bold 我可以這麼做
+            ul.list-group.list-group-flush.mb-4
+              li.list-group-item
+                span.pwc-color__red.font-weight-bold 強化既有的知識與技能
+                br
+                ol(style='padding-left:22px;')
+                  li 爭取合適的任務，將潛力化為具體的實務經驗，例如：成為某個產業的專家
+                  li 透過服務不同的客戶，或是承擔新的責任，將我們所具備的知能實踐在新的情境中
+                  li 致力成為某個領域或是技術方面的代表性人物，以豐富個人資歷
+              li.list-group-item
+                span.pwc-color__red.font-weight-bold 學習新技能
+                br
+                ol(style='padding-left:22px;')
+                  li 在較不熟悉的領域承擔新任務，例如：為事務所開發新客戶或是建立新關係
+                  li 培養新的技巧或能力，例如：轉換負責的產業
+                  li 參與複雜或大型的專案或客戶服務
+                  li 協助合夥人處理客戶端發生的難題
+              li.list-group-item
+                span.pwc-color__red.font-weight-bold 與他人合作
+                br
+                ol(style='padding-left:22px;')
+                  li 跟著經驗比我們豐富的前輩或是擔任不同角色的對象見習 (Shadowing)，並且在可行的範圍內協助代理工作
+                  li 隨同合夥人參加業務開發活動，並從中觀察與學習
+                  li 協助合夥人處理跨 LoS 的計畫或專案
+              li.list-group-item
+                span.pwc-color__red.font-weight-bold 領導
+                br
+                ol(style='padding-left:22px;')
+                  li 領導能夠對所內同仁產生正面影響的活動，例如：擔任職委會工作
+                  li 思考透過現職或是接受新任務來展現個人領導力，例如：讓 Coachees 及 Team members 跟著我們見習，或是給予他們承擔重要責任的機會
+                  li 在所內或是對客戶發表個人專業觀點
+              li.list-group-item
+                span.pwc-color__red.font-weight-bold 經驗循環
+                br
+                div.text-secondary.mb-1(style='font-size:0.9rem;')
+                  | 所謂的經驗循環
+                  | (Cycles of experience)，是透過扮演不同角色或承接新的任務，來累積多樣化的實務經驗，進而厚植個人專業實力。角色／任務的選擇應與個人的發展目標環環相扣，執行過程中愈是認真投入、有目的性地反覆循環，其成效愈是顯著
+                ol(style='padding-left:22px;')
+                  li 擔任訓練課程的講師或同仁發展計畫的指導教練
+                  li 在自己所嫻熟的職能或是產業外，尋求擔任不同角色的機會，主動運用及拓展人際網絡
+                  li 擔任能夠發揮不同技能的角色，例如：從財會專業 (Technical) 的角色轉換至負責維繫客戶關係 (Relationships) 的角色
+                  li 擔任為晉升至 Director 做好準備的角色
+                  li 參與國內或區域性的策略專案 (Strategic projects)
+                  li 投入非個人專業領域的跨 LoS 任務，豐富個人經歷
+            // End: 做中學－the 70 (Senior Manager)
+            // Start: 互相學－the 20 (Senior Manager)
+            h5#list-item-3.list-item 互相學－the 20
+            hr
+            p
+              | 所謂透過經驗傳承學習 (Learning from Others)，指的是從工作教導 (Coaching)、職場輔導 (Mentoring)、給予／接受回饋、經驗分享，以及省思學習 (Reflecting on what we have learned) 等過程來發展我們的能力。
+            p
+              | 為了達到最好的學習效益，我們將這個管道劃分出四個主要關係，包含：「職場輔導 (Mentoring)」、「工作教導 (Coaching)」、以及「客戶關係 (Customer Relationships)」、「團隊、同儕或是其他關係 (Group, Peer Relationships)」，並且提供相關的參考範例。我們可以思考如何從透過與他人的交流中，促進個人專業發展。
+            p.font-weight-bold 我可以這麼做
+            ul.list-group.list-group-flush.mb-4
+              li.list-group-item
+                span.pwc-color__red.font-weight-bold 職場輔導
+                br
+                ol(style='padding-left:22px;')
+                  li 尋求一位經驗比較豐富，但不熟悉我們工作內容的人扮演自己的職場導師 (Mentor)，為我們的工作以及學習計畫提供不同觀點
+                  li 尋求不同 LoS 資深同仁的輔導 (Mentoring)，從中學習多樣化的經驗，以得到更多元的發展
+                  li 嘗試尋找所外的資深人士擔任 Mentor，指導我們的職涯發展
+              li.list-group-item
+                span.pwc-color__red.font-weight-bold 工作教導
+                br
+                ol(style='padding-left:22px;')
+                  li 省思 Coach 或是客戶在工作上教導的內容，針對他們的回饋採取相關行動
+                  li 透過與 Coachees 及 Team members 的對話與溝通，精進領導 (Leadership) 及工作教導 (Coaching) 技巧
+                  li 針對自己的工作表現定期尋求正式及非正式的回饋。同時也要定期給予他人正式及非正式的工作績效回饋
+                  li 思考如何讓我們與 Coach / Coaching partner 的關係發揮最大效益，例如：主動改變會談的方式、地點、頻率以及會談內容來增進效果
+                  li 尋求和事務所資深合夥人建立 Coaching relationships 的機會
+              li.list-group-item
+                span.pwc-color__red.font-weight-bold 客戶關係
+                br
+                ol(style='padding-left:22px;')
+                  li 主動思考我們從客戶關係中，學到了什麼
+                  li 督促自己真正了解客戶觀點，並且從中學習
+                  li 尋求陪同合夥人和重點客戶接觸、互動的機會
+              li.list-group-item
+                span.pwc-color__red.font-weight-bold 團隊、同儕或是其他關係
+                br
+                ol(style='padding-left:22px;')
+                  li 充分利用行動學習小組 (Action learning groups)，向同儕學習，或是教導他們，並且邀請合夥人指導
+                  li 成為資淺同仁學習的楷模
+                  li 請一位新晉升的 Director，與我們分享他的心路歷程
+                  li 尋求參與所內及所外各種交流活動的機會，例如：社交活動、客戶也應邀參加的產業座談會等
+                  li 增加在所內資深 Leaders 前曝光的機會，例如：參加所內各種交流活動、參與不同的工作任務，或是觀摩見習
+            // End: 互相學－the 20 (Senior Manager)
+            // Start: 上課學－the 10 (Senior Manager)
+            h5#list-item-4.list-item 上課學－the 10
+            hr
+            p
+              | Firm 的學程規劃係以協助同仁發展 
+              a.pwc-color__rose--whitetype.pwc-link(href='https://pwc.csod.com/catalog/CustomPage.aspx?id=20003310#list-item-2', target='_blank') The PwC Professional 五力職能
+              | ，進而達成個人職涯目標以及事務所策略目標為出發點，學程分為七大類：
+            // Start: 圖示
+            .row
+              .col-sm.row.justify-content-center.pwc-program
+                img.mb-5.pwc-program__img(onmouseout='hideToolTip()', src='https://pwc.csod.com/clientimg/pwc/welcome/TW/The%20PwC%20Professional/career-tw-courses.jpg', usemap='#image-map')
+                div.pwc-program__text
+                map(name='image-map')
+                  area(onmouseover='showToolTip(this)', target='', alt='合夥人發展課程', coords='32,97,202,176', shape='rect', data-info='針對事務所合夥人需求而規畫，透過合夥人微學習、一對一專人輔導與專題課程，提供正向領導、營運效能與產業思維相關主題策展，協助合夥人建立敏捷的領導力')
+                  area(onmouseover='showToolTip(this)', target='', alt='優質服務系列課程', coords='33,194,177,276', shape='rect', data-info='呼應「創造客戶價值、提升工作效率」策略目標，這裡有專案管理、業務開發、客戶服務、行銷、談判等課程，協助您打造卓越的 PwC Client Experience')
+                  area(onmouseover='showToolTip(this)', target='', alt='教練文化課程', coords='37,329,218,385', shape='rect', data-side='left', data-info='奠基於「以人為本」的企業文化，本學程涵蓋溝通、回饋、教練技巧、向上管理等課程，邀您一同創造出類拔萃的 PwC People Experience')
+                  area(onmouseover='showToolTip(this)', target='', alt='菁英人才發展學程', title='菁英人才發展學程', coords='380,21,607,72', shape='rect', data-info='針對事務所策略目標及特定族群發展需求而規劃，結合訓練課程、行動學習、專案任務、小組作業、指導與回饋、成果評鑑等元素的長期培訓發展方案')
+                  area(onmouseover='showToolTip(this)', target='', alt='基礎及專業課程', title='基礎及專業課程', coords='513,110,719,167', shape='rect', data-info='新人、新任經協理訓練、PC&D、道德及獨立性政策、風險暨品質管理等，協助同仁掌握事務所的核心架構、期待與政策。以及各 LoS 因應業務需求而規劃的專業課程，如：Assurance 審計方法訓練、Tax & Legal 移轉訂價課程、Advisory TS 課程、IFS 法律訓練等，充實同仁的專業知能')
+                  area(onmouseover='showToolTip(this)', target='', alt='英文課程', title='英文課程', coords='546,208,673,266', shape='rect', data-info='藉由生動活潑的課程設計，將循序漸進提升同仁英文能力，以積極參與 PwC Global Network 資源分享與整合工作')
+                  area(onmouseover='showToolTip(this)', target='', alt='人文系列課程', title='人文系列課程', coords='497,329,675,385', shape='rect', data-info='邀請各個領域傑出人士經驗分享，藉由跨界學習，協助同仁多元思考、擴展視野，讓個人工作、生活更為均衡')
+            // End: 圖示
+            p
+              | 除了這裡提供的正規學程 (10) 之外，別忘了提醒自己，個人的專業發展不能只靠上課，更需要靠您主動積極地藉由工作經驗 (70) 及與他人的交流 (20) ，累積實力。讓我們持續地學習與實踐，造就自己成為續航力滿滿的「全方位專業人才」(
+              a.pwc-color__rose--whitetype.pwc-link(href='https://pwc.csod.com/catalog/CustomPage.aspx?id=20003310#list-item-2', target='_blank') The PwC Professional
+              | )。
+            // End: 上課學－the 10 (Senior Manager)
+            // End: Right Context
+            // End: Content
+            // Optional JavaScript
+            script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+            script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
+            script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')
+            script.
+              $(window).on('hashchange', function(e) {       
+              setTimeout(function() {
+              $(".list-group-item-action.active").removeClass("active");
+              $('[href="' + document.location.hash + '"]').addClass("active");
+              }, 50);
+              });
+              
+              $(function () {
+              $('[data-toggle="tooltip"]').tooltip();
+              $('#myModal').on('shown.bs.modal', function () {
+              $('#myInput').trigger('focus')
+              });
+              });
+
+              window.FontAwesomeConfig = {
+                searchPseudoElements: true
+              }
+
+              function showToolTip(evt) {
+              var hoverText = document.getElementsByClassName('pwc-program__text')[0];
+              
+              hoverText.innerHTML = evt.getAttribute('data-info');
+              hoverText.insertAdjacentHTML('afterbegin', '<p class="font-weight-bold pwc-color__red"><i class="fas fa-book mr-1"></i>' + evt.getAttribute('alt') + '</p>');
+              hoverText.style.display = 'block';
+              }
+
+              function hideToolTip() {
+              document.getElementsByClassName('pwc-program__text')[0].style.display = 'none';
+              }

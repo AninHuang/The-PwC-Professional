@@ -1,0 +1,65 @@
+$pwc-font-stack__headline: Georgia, 'ITC Charter', 'SimSun';
+$pwc-font-stack__subhead: 'Helvetica Neue', Helvetica, 'SimSun';
+$pwc-font-stack__body: Arial, 'Helvetica Neue', 'Microsoft JhengHei';
+$pwc-color__orange: #D04A02;
+$pwc-color__rose: #DB536A;
+$pwc-color__rose--whitetype: #D93954;
+$pwc-color__red: #E0301E;
+$pwc-color__black: #000000;
+$pwc-color__grey--dark: #2D2D2D;
+$pwc-color__grey--medium: #464646;
+$pwc-color__grey: #7D7D7D;
+$pwc-color__grey--light: #DEDEDE;
+$pwc-color__white: #FFFFFF;
+
+.pwc-font__headline {
+    font-family: $pwc-font-stack__headline;
+}
+
+.pwc-font__subhead {
+    font-family: $pwc-font-stack__subhead;
+}
+
+.pwc-font__body {
+    font-family: $pwc-font-stack__body;
+}
+
+.pwc-color__orange {
+    color: $pwc-color__orange;
+}
+
+.pwc-color__rose {
+    color: $pwc-color__rose;
+}
+
+.pwc-color__rose--whitetype {
+    color: $pwc-color__rose--whitetype;
+}
+
+.pwc-color__red {
+    color: $pwc-color__red;
+}
+
+.pwc-color__black {
+    color: $pwc-color__black;
+}
+
+.pwc-color__grey--dark {
+    color: $pwc-color__grey--dark;
+}
+
+.pwc-color__grey--medium {
+    color: $pwc-color__grey--medium;
+}
+
+.pwc-color__grey {
+    color: $pwc-color__grey;
+}
+
+.pwc-color__grey--light {
+    color: $pwc-color__grey--light;
+}
+
+.pwc-color__white {
+    color: $pwc-color__white;
+}

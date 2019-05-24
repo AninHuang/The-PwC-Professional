@@ -1,0 +1,217 @@
+doctype html
+html(lang='en')
+  head
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    // Bootstrap CSS
+    link(rel='stylesheet', href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css', integrity='sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T', crossorigin='anonymous')
+    // FontAwesome CSS
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.8.2/css/all.css", integrity='sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay', crossorigin='anonymous')
+    // Material Design Bootstrap
+    // link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.0/css/mdb.min.css")
+    // PwC CSS
+    link(rel="stylesheet", href="./css/pwc.css")
+    // All CSS
+    link(rel="stylesheet", href="./css/all.css")
+    title The PwC Professional
+    style.
+      .list-group-flush .list-group-item:nth-child(odd) {
+      background-color: #F8F9FA;
+      }
+      .pwc-program {
+      position: relative;
+      }
+      .pwc-program__text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none;
+      max-width: 300px;
+      margin: auto;
+      padding: 1rem;
+      border-radius: 5%;
+      background-color: #DEDEDE;
+      opacity: .9;
+      }
+      @media (min-width: 1200px) {
+      .container {
+      max-width: 1340px!important;
+      }
+      .pwc-picaside {
+      width: -webkit-calc(100% - 420px - 3rem); /* Safari, Chrome */
+      width: -moz-calc(100% - 420px - 3rem); /* Mozilla */
+      width: calc(100% - 420px - 3rem);
+      }
+      }
+  body
+    #pwc-container.container
+      // Start: Header
+      .row.pwc-header__pic
+        h1 The PwC Professional
+      // End: Header
+      // Start: Navigation
+      .row.justify-content-md-left.pwc-nav
+        ul.nav.justify-content-center
+          li.nav-item
+            a.nav-link(href='https://pwc.csod.com/catalog/CustomPage.aspx?id=20003310') Home
+          li.nav-item
+            a.nav-link(href='https://pwc.csod.com/catalog/CustomPage.aspx?id=20003318') Associate
+          li.nav-item
+            a.nav-link(href='https://pwc.csod.com/catalog/CustomPage.aspx?id=20003358') Senior Associate
+          li.nav-item
+            a.nav-link(href='https://pwc.csod.com/catalog/CustomPage.aspx?id=20003359') Manager
+          li.nav-item
+            a.nav-link(href='https://pwc.csod.com/catalog/CustomPage.aspx?id=20003360') Senior Manager
+          li.nav-item
+            a.nav-link(href='https://pwc.csod.com/catalog/CustomPage.aspx?id=20003361') Director
+          li.nav-item
+            a.nav-link.active(href='https://pwc.csod.com/catalog/CustomPage.aspx?id=20003362') Partner
+      // End: Navigation
+      // Start: Content
+      .row
+        // Start: Left Tabs
+        .col-3.pb-5
+          #list-example.list-group
+            a.list-group-item.list-group-item-action(href='#list-item-1') 發展架構
+            a.list-group-item.list-group-item-action(href='#list-item-2') 台灣學程
+        // End: Left Tabs
+        // Start: Right Context
+        .col-9.pb-5
+          .scrollspy-example.z-depth-1(data-spy='scroll', data-target='#list-example', data-offset='0')
+            // Start: 發展架構 (Partner)
+            h5#list-item-1.list-item 發展架構
+            hr
+            p.font-weight-bold A greater you, a greater firm <span class="font-weight-normal"> - learn and develop at every stage of your career</span>
+            .row
+              .col
+                .row.flex-column.p-2.mc-0.my-2
+                  p.font-weight-bold.text-center.py-1(style='background-color:rgba(0, 0, 0, 0.05)') 掌握五力的資誠領袖
+                  .col.text-center.mb-1(style='flex:1 1 auto;')
+                    a(href='https://pwc.csod.com/catalog/CustomPage.aspx?id=20003310#list-item-2', target='_blank')
+                      img(src='https://pwc.csod.com/clientimg/pwc/welcome/TW/The%20PwC%20Professional/five.png', width='250')
+                  .col(style='flex:1 1 auto;')
+                    | In the face of global megatrends and economic uncertainty, now, more than ever,
+                    | calls for a purposeful and disciplined development approach to ensure our learning
+                    | can be transferred to real business impacts and support us to consistently role model 
+                    a.pwc-color__rose--whitetype.pwc-link(href='https://pwc.csod.com/catalog/CustomPage.aspx?id=20003310#list-item-2', target='_blank') The PwC Professional
+                    |  behaviors.
+              .col
+                .row.flex-column.p-2.mc-0.my-2
+                  p.font-weight-bold.text-center.py-1(style='background-color:rgba(0, 0, 0, 0.05)') 70:20:10 學習原則
+                  .col.mb-4(style='flex:1 1 auto;')
+                    canvas#pieChart
+                  .col(style='flex:1 1 auto;')
+                    p
+                      a.pwc-color__rose--whitetype.pwc-link(href='https://pwc.csod.com/catalog/CustomPage.aspx?id=20003310#list-item-3', target='_blank') 70:20:10
+                      |  has been a well-tested development approach at PwC and it applies to partner development just as well.
+                    P With a clear business plan in mind, Partners shall take the development framework below and the resources in this iLearn Portal as a starting point to carefully consider individual development options of a balanced combination of Experience (70), Exchange & Exposure (20) and Education (10).
+            .row.justify-content-center.mt-5
+                img(src='https://pwc.csod.com/clientimg/pwc/welcome/TW/The%20PwC%20Professional/partner_fram_year.png')            
+            // End: 發展架構 (Partner)
+            // Start: 台灣學程 (Partner)
+            h5#list-item-2.list-item 台灣學程
+            hr
+            p
+              | Firm 的學程規劃係以協助同仁發展 
+              a.pwc-color__rose--whitetype.pwc-link(href='https://pwc.csod.com/catalog/CustomPage.aspx?id=20003310#list-item-2', target='_blank') The PwC Professional 五力職能
+              | ，進而達成個人職涯目標以及事務所策略目標為出發點，學程分為七大類：
+            // Start: 圖示
+            .row
+              .col-sm.row.justify-content-center.pwc-program
+                img.mb-5.pwc-program__img(onmouseout='hideToolTip()', src='https://pwc.csod.com/clientimg/pwc/welcome/TW/The%20PwC%20Professional/career-tw-courses.jpg', usemap='#image-map')
+                div.pwc-program__text
+                map(name='image-map')
+                  area(onmouseover='showToolTip(this)', target='', alt='合夥人發展課程', coords='32,97,202,176', shape='rect', data-info='針對事務所合夥人需求而規畫，透過合夥人微學習、一對一專人輔導與專題課程，提供正向領導、營運效能與產業思維相關主題策展，協助合夥人建立敏捷的領導力')
+                  area(onmouseover='showToolTip(this)', target='', alt='優質服務系列課程', coords='33,194,177,276', shape='rect', data-info='呼應「創造客戶價值、提升工作效率」策略目標，這裡有專案管理、業務開發、客戶服務、行銷、談判等課程，協助您打造卓越的 PwC Client Experience')
+                  area(onmouseover='showToolTip(this)', target='', alt='教練文化課程', coords='37,329,218,385', shape='rect', data-side='left', data-info='奠基於「以人為本」的企業文化，本學程涵蓋溝通、回饋、教練技巧、向上管理等課程，邀您一同創造出類拔萃的 PwC People Experience')
+                  area(onmouseover='showToolTip(this)', target='', alt='菁英人才發展學程', title='菁英人才發展學程', coords='380,21,607,72', shape='rect', data-info='針對事務所策略目標及特定族群發展需求而規劃，結合訓練課程、行動學習、專案任務、小組作業、指導與回饋、成果評鑑等元素的長期培訓發展方案')
+                  area(onmouseover='showToolTip(this)', target='', alt='基礎及專業課程', title='基礎及專業課程', coords='513,110,719,167', shape='rect', data-info='新人、新任經協理訓練、PC&D、道德及獨立性政策、風險暨品質管理等，協助同仁掌握事務所的核心架構、期待與政策。以及各 LoS 因應業務需求而規劃的專業課程，如：Assurance 審計方法訓練、Tax & Legal 移轉訂價課程、Advisory TS 課程、IFS 法律訓練等，充實同仁的專業知能')
+                  area(onmouseover='showToolTip(this)', target='', alt='英文課程', title='英文課程', coords='546,208,673,266', shape='rect', data-info='藉由生動活潑的課程設計，將循序漸進提升同仁英文能力，以積極參與 PwC Global Network 資源分享與整合工作')
+                  area(onmouseover='showToolTip(this)', target='', alt='人文系列課程', title='人文系列課程', coords='497,329,675,385', shape='rect', data-info='邀請各個領域傑出人士經驗分享，藉由跨界學習，協助同仁多元思考、擴展視野，讓個人工作、生活更為均衡')
+            // End: 圖示
+            p
+              | 除了這裡提供的正規學程 (10) 之外，別忘了提醒自己，個人的專業發展不能只靠上課，更需要靠您主動積極地藉由工作經驗 (70) 及與他人的交流 (20) ，累積實力。讓我們持續地學習與實踐，造就自己成為續航力滿滿的「全方位專業人才」(
+              a.pwc-color__rose--whitetype.pwc-link(href='https://pwc.csod.com/catalog/CustomPage.aspx?id=20003310#list-item-2', target='_blank') The PwC Professional
+              | )。
+            // End: 台灣學程 (Partner)
+            // End: Right Context
+            // End: Content
+            // Optional JavaScript
+            script(src='https://code.jquery.com/jquery-3.3.1.slim.min.js', integrity='sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo', crossorigin='anonymous')
+            script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js', crossorigin='anonymous')
+            script(src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js', integrity='sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1', crossorigin='anonymous')
+            script(src='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js', integrity='sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM', crossorigin='anonymous')
+            script(src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js')
+            script(src="https://cdn.jsdelivr.net/gh/emn178/chartjs-plugin-labels/src/chartjs-plugin-labels.js")
+            script.
+              $(window).on('hashchange', function(e) {       
+              setTimeout(function() {
+              $(".list-group-item-action.active").removeClass("active");
+              $('[href="' + document.location.hash + '"]').addClass("active");
+              }, 50);
+              });
+              
+              $(function () {
+              $('[data-toggle="tooltip"]').tooltip();
+              $('#myModal').on('shown.bs.modal', function () {
+              $('#myInput').trigger('focus')
+              });
+              });
+
+              window.FontAwesomeConfig = {
+                searchPseudoElements: true
+              }
+
+              function showToolTip(evt) {
+              var hoverText = document.getElementsByClassName('pwc-program__text')[0];
+              
+              hoverText.innerHTML = evt.getAttribute('data-info');
+              hoverText.insertAdjacentHTML('afterbegin', '<p class="font-weight-bold pwc-color__red"><i class="fas fa-book mr-1"></i>' + evt.getAttribute('alt') + '</p>');
+              hoverText.style.display = 'block';
+              }
+
+              function hideToolTip() {
+              document.getElementsByClassName('pwc-program__text')[0].style.display = 'none';
+              }
+
+              //pieChart
+              var pieChart = document.getElementById("pieChart");
+              var ctxD = pieChart.getContext('2d');
+
+              pieChart.height = 230;
+              pieChart.style.margin = '0 auto';
+
+              var pieChart = new Chart(ctxD, {
+              type: 'pie',
+              data: {
+              labels: ["實務挑戰", "經驗傳承", "教育訓練"],
+              datasets: [{
+              data: [70, 20, 10],
+              backgroundColor: ["#E0301E", "#DB536A", "#FFB600"],
+              hoverBackgroundColor: ["#E86153", "#E27588", "#FFC83D"]
+              }]
+              },
+              options: {
+              responsive: false,
+              maintainAspectRatio: false,
+              legend:{
+              labels:{
+              fontSize: 15
+              },
+              onClick: (function (e) {
+              return e.stopPropagation();
+              })
+              },
+              tooltips: {
+              enabled: true
+              },
+              plugins: {
+              labels: {
+              fontColor: '#fff',
+              fontSize: 14
+              }
+              }
+              }
+              });
